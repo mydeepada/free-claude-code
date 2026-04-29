@@ -21,6 +21,7 @@
 - Goal: Zero-defect, root-cause-oriented engineering for bugs; test-driven engineering for new features. Think carefully; no need to rush.
 - Code: Write the simplest code possible. Keep the codebase minimal and modular.
 - When in doubt about a design decision, add a TODO comment and move on rather than over-engineering.
+- Personal note: I'm using this fork primarily for learning purposes. Prefer extra inline comments when introducing non-obvious patterns.
 
 ## ARCHITECTURE PRINCIPLES (see PLAN.md)
 
@@ -38,5 +39,4 @@
 ## COGNITIVE WORKFLOW
 
 1. **ANALYZE**: Read relevant files. Do not guess.
-2. **PLAN**: Map out the logic. Identify root cause or required changes. Order changes by dependency.
-3. **EXECUTE**: Fix the cause, not the sympt
+2. **PLAN**: Map out the logic. Identify roo
