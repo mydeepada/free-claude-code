@@ -22,6 +22,7 @@
 - Code: Write the simplest code possible. Keep the codebase minimal and modular.
 - When in doubt about a design decision, add a TODO comment and move on rather than over-engineering.
 - Personal note: I'm using this fork primarily for learning purposes. Prefer extra inline comments when introducing non-obvious patterns.
+- Personal note: When explaining non-obvious patterns, also include a brief "why" not just "what" — helps me build intuition, not just copy patterns.
 
 ## ARCHITECTURE PRINCIPLES (see PLAN.md)
 
@@ -34,9 +35,4 @@
 - **Platform-agnostic naming**: Use generic names (e.g. `PLATFORM_EDIT`) not platform-specific ones (e.g. `TELEGRAM_EDIT`) in shared code.
 - **No type ignores**: Do not add `# type: ignore` or `# ty: ignore`. Fix the underlying type issue.
 - **Complete migrations**: When moving modules, update imports to the new owner and remove old compatibility shims in the same change unless preserving a published interface is explicitly required.
-- **Maximum Test Coverage**: There should be maximum test coverage for everything, preferably live smoke test coverage to catch bugs early
-
-## COGNITIVE WORKFLOW
-
-1. **ANALYZE**: Read relevant files. Do not guess.
-2. **PLAN**: Map out the logic. Identify roo
+- **Maximum Test Coverage**: There should be maximum test coverage for everything, preferably live smoke test coverage t
