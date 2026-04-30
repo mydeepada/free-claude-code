@@ -23,6 +23,7 @@
 - When in doubt about a design decision, add a TODO comment and move on rather than over-engineering.
 - Personal note: I'm using this fork primarily for learning purposes. Prefer extra inline comments when introducing non-obvious patterns.
 - Personal note: When explaining non-obvious patterns, also include a brief "why" not just "what" — helps me build intuition, not just copy patterns.
+- Personal note: If I ask you to explain something, give a concrete example alongside the explanation — abstract descriptions alone are hard for me to internalize.
 
 ## ARCHITECTURE PRINCIPLES (see PLAN.md)
 
@@ -34,5 +35,4 @@
 - **Performance**: Use list accumulation for strings (not `+=` in loops), cache env vars at init, prefer iterative over recursive when stack depth matters.
 - **Platform-agnostic naming**: Use generic names (e.g. `PLATFORM_EDIT`) not platform-specific ones (e.g. `TELEGRAM_EDIT`) in shared code.
 - **No type ignores**: Do not add `# type: ignore` or `# ty: ignore`. Fix the underlying type issue.
-- **Complete migrations**: When moving modules, update imports to the new owner and remove old compatibility shims in the same change unless preserving a published interface is explicitly required.
-- **Maximum Test Coverage**: There should be maximum test coverage for everything, preferably live smoke test coverage t
+- **Complete migrations**: When moving modules, update imports to the new owner and remove old compatibility shims in the same change unless preserving a published inte
